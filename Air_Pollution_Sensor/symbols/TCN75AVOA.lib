@@ -1,0 +1,31 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#(c) SnapEDA 2016 (snapeda.com)
+#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
+#
+# TCN75AVOA
+#
+DEF TCN75AVOA U 0 40 Y Y 1 L N
+F0 "U" -169 450 50 H V L BNN
+F1 "TCN75AVOA" -222 -704 50 H V L BNN
+F2 "SOIC127P600X175-8N" 0 0 50 H I L BNN
+F3 "" 0 0 50 H I L BNN
+F4 "TCN75AVOA" 0 0 50 H I L BNN "MPN"
+F5 "SOIC8" 0 0 50 H I L BNN "PACKAGE"
+F6 "33C1106" 0 0 50 H I L BNN "OC_NEWARK"
+F7 "1212686" 0 0 50 H I L BNN "OC_FARNELL"
+F8 "Microchip" 0 0 50 H I L BNN "SUPPLIER"
+DRAW
+S -500 -600 500 400 0 0 16 f
+X SCL 2 -700 200 200 R 40 40 0 0 I 
+X A2 5 -700 100 200 R 40 40 0 0 I 
+X A1 6 -700 0 200 R 40 40 0 0 I 
+X A0 7 -700 -100 200 R 40 40 0 0 I 
+X VDD 8 -700 -300 200 R 40 40 0 0 W 
+X GND 4 -700 -400 200 R 40 40 0 0 P 
+X INT/CMPTR 3 700 0 200 L 40 40 0 0 O 
+X SDA 1 700 100 200 L 40 40 0 0 B 
+ENDDRAW
+ENDDEF
+#
+# End Library

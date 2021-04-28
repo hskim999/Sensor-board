@@ -1,0 +1,8 @@
+(sym_lib_table
+  (lib (name Air_Pollution_Sensor-cache)(type Legacy)(uri ${KIPRJMOD}/Air_Pollution_Sensor-cache.lib)(options "")(descr ""))
+  (lib (name Air_Pollution_Sensor-rescue)(type Legacy)(uri ${KIPRJMOD}/Air_Pollution_Sensor-rescue.lib)(options "")(descr ""))
+  (lib (name ECMF02-2AMX6)(type Legacy)(uri ${KIPRJMOD}/symbols/ECMF02-2AMX6.lib)(options "")(descr ""))
+  (lib (name AFR240320A0-1.77INTM.intm)(type Legacy)(uri ${KIPRJMOD}/symbols/AFR240320A0-1.77INTM.intm.lib)(options "")(descr ""))
+  (lib (name pm2008)(type Legacy)(uri ${KIPRJMOD}/symbols/pm2008.lib)(options "")(descr ""))
+  (lib (name afr240320a0-177intm)(type Legacy)(uri ${KIPRJMOD}/symbols/afr240320a0-177intm.lib)(options "")(descr ""))
+)

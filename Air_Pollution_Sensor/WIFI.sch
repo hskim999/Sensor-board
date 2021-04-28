@@ -1,0 +1,415 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	5200 5300 5200 5500
+Wire Wire Line
+	5200 3800 5200 3450
+$Comp
+L power:+3.3V #PWR?
+U 1 1 60946577
+P 5200 3450
+AR Path="/60946577" Ref="#PWR?"  Part="1" 
+AR Path="/6093D452/60946577" Ref="#PWR0128"  Part="1" 
+F 0 "#PWR0128" H 5200 3300 50  0001 C CNN
+F 1 "+3.3V" H 5215 3623 50  0000 C CNN
+F 2 "" H 5200 3450 50  0001 C CNN
+F 3 "" H 5200 3450 50  0001 C CNN
+	1    5200 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 4100 6200 4100
+Wire Wire Line
+	5800 4300 6200 4300
+Text Label 6200 4100 2    50   ~ 0
+UART_TXD
+Text Label 6200 4300 2    50   ~ 0
+UART_RXD
+$Comp
+L Device:R_Small_US R22
+U 1 1 615C5670
+P 5950 5200
+F 0 "R22" H 6018 5246 50  0000 L CNN
+F 1 "10K" H 6018 5155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 5950 5200 50  0001 C CNN
+F 3 "~" H 5950 5200 50  0001 C CNN
+	1    5950 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 5300 5950 5400
+Wire Wire Line
+	5800 4900 5950 4900
+Wire Wire Line
+	5950 5100 5950 4900
+Wire Wire Line
+	5800 4200 6800 4200
+$Comp
+L power:+3.3V #PWR?
+U 1 1 615CA0E5
+P 6800 3800
+AR Path="/615CA0E5" Ref="#PWR?"  Part="1" 
+AR Path="/6093D452/615CA0E5" Ref="#PWR0151"  Part="1" 
+F 0 "#PWR0151" H 6800 3650 50  0001 C CNN
+F 1 "+3.3V" H 6815 3973 50  0000 C CNN
+F 2 "" H 6800 3800 50  0001 C CNN
+F 3 "" H 6800 3800 50  0001 C CNN
+	1    6800 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R23
+U 1 1 615CA80B
+P 6800 4000
+F 0 "R23" H 6868 4046 50  0000 L CNN
+F 1 "10K" H 6868 3955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 6800 4000 50  0001 C CNN
+F 3 "~" H 6800 4000 50  0001 C CNN
+	1    6800 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 3800 6800 3900
+Wire Wire Line
+	6800 4100 6800 4200
+Text Label 6200 4000 2    50   ~ 0
+PROG_N
+Wire Wire Line
+	5800 4000 6200 4000
+Text Label 6500 4600 2    50   ~ 0
+HSPI_MISO
+Text Label 6500 4700 2    50   ~ 0
+HSPI_MOSI
+Text Label 6500 4800 2    50   ~ 0
+HSPI_SCK
+Text Label 6500 4900 2    50   ~ 0
+HSPI_CS_N
+Text HLabel 6500 4600 2    50   Output ~ 0
+HSPI_MISO
+Text HLabel 6500 4700 2    50   Input ~ 0
+HSPI_MOSI
+Text HLabel 6500 4800 2    50   Input ~ 0
+HSPI_SCK
+Text HLabel 6500 4900 2    50   Input ~ 0
+HSPI_CS
+Text Label 4200 4200 0    50   ~ 0
+EN
+Wire Wire Line
+	4200 4200 4600 4200
+Wire Wire Line
+	4600 4000 4200 4000
+Wire Wire Line
+	5950 4900 6500 4900
+Connection ~ 5950 4900
+Wire Wire Line
+	6500 4800 5800 4800
+Wire Wire Line
+	6500 4700 5800 4700
+Wire Wire Line
+	6500 4600 5800 4600
+NoConn ~ 4600 4400
+NoConn ~ 4600 4800
+NoConn ~ 4600 4900
+Wire Wire Line
+	3200 7000 3500 7000
+$Comp
+L Air_Pollution_Sensor-rescue:1825057-5-Air_Pollution_Sensor-cache S1
+U 1 1 616DE43C
+P 2900 6500
+F 0 "S1" H 2900 7249 50  0000 C CNN
+F 1 "1825057-5" H 2900 7158 50  0000 C CNN
+F 2 "Air_Pollution_Sensor:DIP762W56P254L1772H585Q12" H 2900 6500 50  0001 L BNN
+F 3 "" H 2900 6500 50  0001 L BNN
+F 4 "1825057-5" H 2900 6500 50  0001 L BNN "Comment"
+F 5 "Compliant" H 2900 6500 50  0001 L BNN "EU_RoHS_Compliance"
+	1    2900 6500
+	1    0    0    -1  
+$EndComp
+Text Label 2000 6000 0    50   ~ 0
+RST_N
+Text Label 1900 7000 0    50   ~ 0
+EN
+$Comp
+L Device:R_Small_US R20
+U 1 1 616825B5
+P 2400 7200
+F 0 "R20" H 2468 7246 50  0000 L CNN
+F 1 "10K" H 2468 7155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 2400 7200 50  0001 C CNN
+F 3 "~" H 2400 7200 50  0001 C CNN
+	1    2400 7200
+	1    0    0    -1  
+$EndComp
+Text Label 1150 6200 0    50   ~ 0
+PROG_N
+NoConn ~ 5800 4400
+NoConn ~ 5800 4500
+NoConn ~ 5800 5000
+Wire Wire Line
+	4600 4600 3950 4600
+Wire Wire Line
+	4600 4700 3950 4700
+Wire Wire Line
+	4600 5000 3950 5000
+Wire Wire Line
+	4600 5100 3950 5100
+Text HLabel 3950 4600 0    50   Input ~ 0
+spi_cs
+Text HLabel 3950 4700 0    50   Output ~ 0
+spi_miso
+Text HLabel 3950 5000 0    50   Input ~ 0
+spi_mosi
+Text HLabel 3950 5100 0    50   Input ~ 0
+spi_sck
+Text Label 4200 4000 0    50   ~ 0
+RST_N
+$Comp
+L RF_Module:ESP-12E U?
+U 1 1 60946561
+P 5200 4600
+AR Path="/60946561" Ref="U?"  Part="1" 
+AR Path="/6093D452/60946561" Ref="U5"  Part="1" 
+F 0 "U5" H 5200 5581 50  0000 C CNN
+F 1 "ESP-12E" H 5200 5490 50  0000 C CNN
+F 2 "RF_Module:ESP-12E" H 5200 4600 50  0001 C CNN
+F 3 "http://wiki.ai-thinker.com/_media/esp8266/esp8266_series_modules_user_manual_v1.1.pdf" H 4850 4700 50  0001 C CNN
+	1    5200 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Air_Pollution_Sensor-cache:+3.3V #PWR?
+U 1 1 609CC637
+P 1500 5250
+AR Path="/609CC637" Ref="#PWR?"  Part="1" 
+AR Path="/6093D452/609CC637" Ref="#PWR0127"  Part="1" 
+F 0 "#PWR0127" H 1500 5100 50  0001 C CNN
+F 1 "+3.3V" H 1515 5423 50  0000 C CNN
+F 2 "" H 1500 5250 50  0001 C CNN
+F 3 "" H 1500 5250 50  0001 C CNN
+	1    1500 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0150
+U 1 1 609E8F28
+P 2400 7400
+F 0 "#PWR0150" H 2400 7150 50  0001 C CNN
+F 1 "GND" H 2405 7227 50  0000 C CNN
+F 2 "" H 2400 7400 50  0001 C CNN
+F 3 "" H 2400 7400 50  0001 C CNN
+	1    2400 7400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0152
+U 1 1 609EA5D0
+P 3350 6300
+F 0 "#PWR0152" H 3350 6050 50  0001 C CNN
+F 1 "GND" H 3355 6127 50  0000 C CNN
+F 2 "" H 3350 6300 50  0001 C CNN
+F 3 "" H 3350 6300 50  0001 C CNN
+	1    3350 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0153
+U 1 1 609EB810
+P 5200 5500
+F 0 "#PWR0153" H 5200 5250 50  0001 C CNN
+F 1 "GND" H 5205 5327 50  0000 C CNN
+F 2 "" H 5200 5500 50  0001 C CNN
+F 3 "" H 5200 5500 50  0001 C CNN
+	1    5200 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0196
+U 1 1 609EC641
+P 5950 5400
+F 0 "#PWR0196" H 5950 5150 50  0001 C CNN
+F 1 "GND" H 5955 5227 50  0000 C CNN
+F 2 "" H 5950 5400 50  0001 C CNN
+F 3 "" H 5950 5400 50  0001 C CNN
+	1    5950 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP3
+U 1 1 60868630
+P 8000 3950
+F 0 "TP3" H 8058 4068 50  0000 L CNN
+F 1 "TestPoint" H 8058 3977 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 8200 3950 50  0001 C CNN
+F 3 "~" H 8200 3950 50  0001 C CNN
+	1    8000 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP4
+U 1 1 6086B02D
+P 8550 3950
+F 0 "TP4" H 8608 4068 50  0000 L CNN
+F 1 "TestPoint" H 8608 3977 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 8750 3950 50  0001 C CNN
+F 3 "~" H 8750 3950 50  0001 C CNN
+	1    8550 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP5
+U 1 1 6086BB63
+P 9100 3950
+F 0 "TP5" H 9158 4068 50  0000 L CNN
+F 1 "TestPoint" H 9158 3977 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 9300 3950 50  0001 C CNN
+F 3 "~" H 9300 3950 50  0001 C CNN
+	1    9100 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP6
+U 1 1 6086C64F
+P 9650 3950
+F 0 "TP6" H 9708 4068 50  0000 L CNN
+F 1 "TestPoint" H 9708 3977 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 9850 3950 50  0001 C CNN
+F 3 "~" H 9850 3950 50  0001 C CNN
+	1    9650 3950
+	1    0    0    -1  
+$EndComp
+Text Label 7450 4200 0    50   ~ 0
+UART_TXD
+Text Label 7450 4350 0    50   ~ 0
+UART_RXD
+Wire Wire Line
+	8000 4050 8000 3950
+Wire Wire Line
+	7450 4050 8000 4050
+Wire Wire Line
+	8550 4200 8550 3950
+Wire Wire Line
+	9100 3950 9100 4350
+Wire Wire Line
+	7450 4350 9100 4350
+Wire Wire Line
+	9650 4500 9650 3950
+Wire Wire Line
+	7450 4500 9650 4500
+$Comp
+L power:+3.3V #PWR?
+U 1 1 60880E56
+P 7450 3900
+AR Path="/60880E56" Ref="#PWR?"  Part="1" 
+AR Path="/6093D452/60880E56" Ref="#PWR0154"  Part="1" 
+F 0 "#PWR0154" H 7450 3750 50  0001 C CNN
+F 1 "+3.3V" H 7465 4073 50  0000 C CNN
+F 2 "" H 7450 3900 50  0001 C CNN
+F 3 "" H 7450 3900 50  0001 C CNN
+	1    7450 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 3900 7450 4050
+Wire Wire Line
+	8550 4200 7450 4200
+$Comp
+L power:GND #PWR0155
+U 1 1 60788BEE
+P 7450 4650
+F 0 "#PWR0155" H 7450 4400 50  0001 C CNN
+F 1 "GND" H 7455 4477 50  0000 C CNN
+F 2 "" H 7450 4650 50  0001 C CNN
+F 3 "" H 7450 4650 50  0001 C CNN
+	1    7450 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 4650 7450 4500
+Text Notes 7350 7500 0    50   ~ 10
+WiFi_module
+Text Notes 10600 7650 0    50   ~ 10
+1.0
+Text Notes 8150 7650 0    50   ~ 10
+2021.04.14
+Wire Wire Line
+	3200 6200 3350 6200
+Wire Wire Line
+	3350 6200 3350 6300
+Wire Wire Line
+	3200 6000 3350 6000
+Wire Wire Line
+	3350 6000 3350 6200
+Connection ~ 3350 6200
+$Comp
+L Device:R_Small_US R19
+U 1 1 6166775E
+P 1500 5750
+F 0 "R19" H 1568 5796 50  0000 L CNN
+F 1 "10K" H 1568 5705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 1500 5750 50  0001 C CNN
+F 3 "~" H 1500 5750 50  0001 C CNN
+	1    1500 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R21
+U 1 1 616A70F0
+P 2400 5750
+F 0 "R21" H 2468 5796 50  0000 L CNN
+F 1 "10K" H 2468 5705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 2400 5750 50  0001 C CNN
+F 3 "~" H 2400 5750 50  0001 C CNN
+	1    2400 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 6000 2400 6000
+Wire Wire Line
+	1500 5850 1500 6200
+Wire Wire Line
+	1500 6200 2600 6200
+Wire Wire Line
+	2400 5850 2400 6000
+Connection ~ 2400 6000
+Wire Wire Line
+	2400 6000 2600 6000
+Wire Wire Line
+	1500 5650 1500 5450
+Wire Wire Line
+	1500 5450 2400 5450
+Wire Wire Line
+	3500 5450 3500 7000
+Wire Wire Line
+	2400 5650 2400 5450
+Connection ~ 2400 5450
+Wire Wire Line
+	2400 5450 3500 5450
+Wire Wire Line
+	1500 5250 1500 5450
+Connection ~ 1500 5450
+Wire Wire Line
+	1150 6200 1500 6200
+Connection ~ 1500 6200
+Wire Wire Line
+	2400 7000 2400 7100
+Wire Wire Line
+	1900 7000 2400 7000
+Wire Wire Line
+	2400 7000 2600 7000
+Connection ~ 2400 7000
+Wire Wire Line
+	2400 7300 2400 7400
+$EndSCHEMATC

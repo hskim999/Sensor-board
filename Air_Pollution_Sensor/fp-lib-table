@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name Air_Pollution_Sensor)(type KiCad)(uri ${KIPRJMOD}/footprints/Air_Pollution_Sensor.pretty/Air_Pollution_Sensor.pretty)(options "")(descr ""))
+)
