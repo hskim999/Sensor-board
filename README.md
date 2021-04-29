@@ -1,2 +1,0 @@
-# Sensor-board
-RRRREEEEAAAAADDD MMMEEE!!!
